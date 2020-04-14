@@ -1,0 +1,138 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Account	includes/classes/Account.php	/^    class Account {$/;"	c	line:2
+Album	includes/classes/Album.php	/^    class Album {$/;"	c	line:2
+Artist	includes/classes/Artist.php	/^    class Artist {$/;"	c	line:2
+Constants	includes/classes/Constants.php	/^class Constants {$/;"	c	line:2
+Song	includes/classes/Song.php	/^    class Song {$/;"	c	line:2
+__construct	includes/classes/Account.php	/^        public function __construct($con) {$/;"	f	line:6
+__construct	includes/classes/Album.php	/^        public function __construct($con, $id) {$/;"	f	line:10
+__construct	includes/classes/Artist.php	/^        public function __construct($con, $id) {$/;"	f	line:6
+__construct	includes/classes/Song.php	/^        public function __construct($con, $id) {$/;"	f	line:14
+account	register.php	/^    $account = new Account($con);$/;"	v	line:6
+album	album.php	/^$album = new Album($con, $albumId);$/;"	v	line:8
+album	includes/classes/Album.php	/^			$album = mysqli_fetch_array($query);$/;"	v	line:15
+albumArtist	album.php	/^				$albumArtist = $albumSong->getArtist();$/;"	v	line:31
+albumId	album.php	/^	$albumId = $_GET['id'];$/;"	v	line:3
+albumId	includes/classes/Song.php	/^			$this->albumId = $this->mysqliData['albun'];$/;"	v	line:22
+albumId	includes/classes/Song.php	/^		private $albumId;$/;"	v	line:8
+albumQuery	index.php	/^		$albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 10");$/;"	v	line:7
+albumSong	album.php	/^				$albumSong = new Song($con, $songId);$/;"	v	line:30
+array	includes/classes/Album.php	/^			$array = array();$/;"	v	line:47
+artist	album.php	/^$artist = $album->getArtist();$/;"	v	line:9
+artist	includes/classes/Artist.php	/^			$artist = mysqli_fetch_array($query);$/;"	v	line:13
+artistId	includes/classes/Album.php	/^			$this->artistId = $album['artist'];$/;"	v	line:18
+artistId	includes/classes/Album.php	/^		private $artistId;$/;"	v	line:6
+artistId	includes/classes/Song.php	/^			$this->artistId = $this->mysqliData['artist'];$/;"	v	line:21
+artistId	includes/classes/Song.php	/^		private $artistId;$/;"	v	line:7
+artworkPath	includes/classes/Album.php	/^			$this->artworkPath = $album['artworkPath'];$/;"	v	line:20
+artworkPath	includes/classes/Album.php	/^		private $artworkPath;$/;"	v	line:8
+checkEmailQuery	includes/classes/Account.php	/^            $checkEmailQuery = mysqli_query($this->con, "SELECT email FROM users WHERE email='$email'");$/;"	v	line:93
+checkUserNameQuery	includes/classes/Account.php	/^            $checkUserNameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username='$username'");$/;"	v	line:61
+con	includes/classes/Account.php	/^			$this->con = $con;$/;"	v	line:7
+con	includes/classes/Account.php	/^        private $con;$/;"	v	line:3
+con	includes/classes/Album.php	/^			$this->con = $con;$/;"	v	line:11
+con	includes/classes/Album.php	/^        private $con;$/;"	v	line:3
+con	includes/classes/Artist.php	/^			$this->con = $con;$/;"	v	line:7
+con	includes/classes/Artist.php	/^        private $con;$/;"	v	line:3
+con	includes/classes/Song.php	/^			$this->con = $con;$/;"	v	line:15
+con	includes/classes/Song.php	/^        private $con;$/;"	v	line:3
+con	includes/config.php	/^	$con = mysqli_connect("localhost", "root", "", "slotify");$/;"	v	line:7
+date	includes/classes/Account.php	/^			$date = date("Y-m-d");$/;"	v	line:47
+duration	includes/classes/Song.php	/^			$this->duration = $this->mysqliData['duration'];$/;"	v	line:24
+duration	includes/classes/Song.php	/^		private $duration;$/;"	v	line:10
+email	includes/handlers/register-handler.php	/^        $email = sanitizeFormString($_POST['email']);$/;"	v	line:25
+email2	includes/handlers/register-handler.php	/^        $email2 = sanitizeFormString($_POST['email2']);$/;"	v	line:26
+emailInvalid	includes/classes/Constants.php	/^	public static $emailInvalid = "Email is not valid";$/;"	v	line:6
+emailTaken	includes/classes/Constants.php	/^	public static $emailTaken = "This email is already in use";$/;"	v	line:8
+emailsDoNotMatch	includes/classes/Constants.php	/^	public static $emailsDoNotMatch = "Your emails don't match";$/;"	v	line:7
+encryptedPassword	includes/classes/Account.php	/^			$encryptedPassword = md5($password);$/;"	v	line:46
+error	includes/classes/Account.php	/^				$error = "";$/;"	v	line:40
+errorArray	includes/classes/Account.php	/^            $this->errorArray = array();$/;"	v	line:8
+errorArray	includes/classes/Account.php	/^        private $errorArray;$/;"	v	line:4
+firstName	includes/handlers/register-handler.php	/^        $firstName = sanitizeFormName($_POST['firstName']);$/;"	v	line:23
+firstNameCharacters	includes/classes/Constants.php	/^	public static $firstNameCharacters = "Your first name should be between 2 and 25 characters";$/;"	v	line:9
+genre	includes/classes/Album.php	/^			$this->genre = $album['genre'];$/;"	v	line:19
+genre	includes/classes/Album.php	/^		private $genre;$/;"	v	line:7
+genre	includes/classes/Song.php	/^			$this->genre = $this->mysqliData['genre'];$/;"	v	line:23
+genre	includes/classes/Song.php	/^		private $genre;$/;"	v	line:9
+getAlbum	includes/classes/Song.php	/^		public function getAlbum() {$/;"	f	line:36
+getArtist	includes/classes/Album.php	/^		public function getArtist() {$/;"	f	line:27
+getArtist	includes/classes/Song.php	/^		public function getArtist() {$/;"	f	line:32
+getArtworkPath	includes/classes/Album.php	/^		public function getArtworkPath() {$/;"	f	line:35
+getDuration	includes/classes/Song.php	/^		public function getDuration() {$/;"	f	line:44
+getError	includes/classes/Account.php	/^		public function getError($error) {$/;"	f	line:38
+getGenre	includes/classes/Album.php	/^		public function getGenre() {$/;"	f	line:31
+getGenre	includes/classes/Song.php	/^		public function getGenre() {$/;"	f	line:40
+getInputValue	register.php	/^	function getInputValue($name) {$/;"	f	line:11
+getMySqliData	includes/classes/Song.php	/^		public function getMySqliData() {$/;"	f	line:52
+getName	includes/classes/Artist.php	/^		public function getName() {$/;"	f	line:11
+getNumberOfSongs	includes/classes/Album.php	/^		public function getNumberOfSongs() {$/;"	f	line:39
+getPath	includes/classes/Song.php	/^		public function getPath() {$/;"	f	line:48
+getSongIds	includes/classes/Album.php	/^		public function getSongIds() {$/;"	f	line:44
+getTitle	includes/classes/Album.php	/^		public function getTitle() {$/;"	f	line:23
+getTitle	includes/classes/Song.php	/^		public function getTitle() {$/;"	f	line:28
+i	album.php	/^				$i = $i + 1;$/;"	v	line:44
+i	album.php	/^			$i = 1;$/;"	v	line:28
+id	includes/classes/Album.php	/^            $this->id = $id;$/;"	v	line:12
+id	includes/classes/Album.php	/^        private $id;$/;"	v	line:4
+id	includes/classes/Artist.php	/^            $this->id = $id;$/;"	v	line:8
+id	includes/classes/Artist.php	/^        private $id;$/;"	v	line:4
+id	includes/classes/Song.php	/^            $this->id = $id;$/;"	v	line:16
+id	includes/classes/Song.php	/^        private $id;$/;"	v	line:4
+inputText	includes/handlers/register-handler.php	/^        $inputText = str_replace(" ", "", $inputText);$/;"	v	line:11
+inputText	includes/handlers/register-handler.php	/^        $inputText = str_replace(" ", "", $inputText);$/;"	v	line:5
+inputText	includes/handlers/register-handler.php	/^        $inputText = strip_tags($inputText);$/;"	v	line:10
+inputText	includes/handlers/register-handler.php	/^        $inputText = strip_tags($inputText);$/;"	v	line:17
+inputText	includes/handlers/register-handler.php	/^        $inputText = strip_tags($inputText);$/;"	v	line:4
+inputText	includes/handlers/register-handler.php	/^        $inputText = ucfirst(strtolower($inputText));$/;"	v	line:12
+insertUserDetails	includes/classes/Account.php	/^		private function insertUserDetails($username, $firstName, $lastName, $email, $password) {$/;"	f	line:45
+lastName	includes/handlers/register-handler.php	/^        $lastName = sanitizeFormName($_POST['lastName']);$/;"	v	line:24
+lastNameCharacters	includes/classes/Constants.php	/^	public static $lastNameCharacters = "Your last name should be between 2 and 25 characters";$/;"	v	line:10
+login	includes/classes/Account.php	/^		public function login($username, $password) {$/;"	f	line:11
+loginFailed	includes/classes/Constants.php	/^	public static $loginFailed = "Your username or password was incorrect";$/;"	v	line:14
+mysqliData	includes/classes/Song.php	/^			$this->mysqliData = mysqli_fetch_array($query);$/;"	v	line:19
+mysqliData	includes/classes/Song.php	/^		private $mysqliData;$/;"	v	line:5
+password	includes/classes/Account.php	/^			$password = md5($password);$/;"	v	line:12
+password	includes/handlers/login-handler.php	/^	$password = $_POST['loginPassword'];$/;"	v	line:4
+password	includes/handlers/register-handler.php	/^        $password = sanitizeFormPassword($_POST['password']);$/;"	v	line:27
+password2	includes/handlers/register-handler.php	/^        $password2 = sanitizeFormPassword($_POST['password2']);$/;"	v	line:28
+passwordCharacters	includes/classes/Constants.php	/^	public static $passwordCharacters = "Your password should be between 8 and 30 characters";$/;"	v	line:5
+passwordNotAlphanumeric	includes/classes/Constants.php	/^	public static $passwordNotAlphanumeric = "Your password can only contain numbers and letters";$/;"	v	line:4
+passwordsDoNotMatch	includes/classes/Constants.php	/^	public static $passwordsDoNotMatch = "Your passwords don't match";$/;"	v	line:3
+path	includes/classes/Song.php	/^			$this->path = $this->mysqliData['path'];$/;"	v	line:25
+path	includes/classes/Song.php	/^		private $path;$/;"	v	line:11
+profilePic	includes/classes/Account.php	/^			$profilePic = "assets\/images\/profile-pics\/profile.jpg";$/;"	v	line:48
+query	includes/classes/Account.php	/^			$query = mysqli_query($this->con, "SELECT * FROM users WHERE username='$username' AND password='$password'");$/;"	v	line:13
+query	includes/classes/Album.php	/^			$query = mysqli_query($this->con, "SELECT * FROM Songs WHERE album='$this->id' ORDER BY albumOrder ASC");$/;"	v	line:45
+query	includes/classes/Album.php	/^			$query = mysqli_query($this->con, "SELECT * FROM Songs WHERE album='$this->id'");$/;"	v	line:40
+query	includes/classes/Album.php	/^			$query = mysqli_query($this->con, "SELECT * FROM albums WHERE id='$this->id'");$/;"	v	line:14
+query	includes/classes/Artist.php	/^			$query = mysqli_query($this->con, "SELECT name FROM artists WHERE id='$this->id'");$/;"	v	line:12
+query	includes/classes/Song.php	/^			$query = mysqli_query($this->con, "SELECT * FROM Songs WHERE id='$this->id'");$/;"	v	line:18
+register	includes/classes/Account.php	/^        public function register($username, $firstName, $lastName, $email, $email2, $password, $password2) {$/;"	f	line:23
+result	includes/classes/Account.php	/^			$result = mysqli_query($this->con, "INSERT INTO users (username, firstName, lastName, email, password, signUpDate, profilePic) VALUES('$username', '$firstName', '$lastName', '$email', '$encryptedPassword', '$date', '$profilePic')");$/;"	v	line:50
+result	includes/handlers/login-handler.php	/^	$result = $account->login($username, $password);$/;"	v	line:6
+sanitizeFormName	includes/handlers/register-handler.php	/^    function sanitizeFormName($inputText) {$/;"	f	line:9
+sanitizeFormPassword	includes/handlers/register-handler.php	/^    function sanitizeFormPassword($inputText) {$/;"	f	line:16
+sanitizeFormString	includes/handlers/register-handler.php	/^    function sanitizeFormString($inputText) {$/;"	f	line:3
+songIdArray	album.php	/^			$songIdArray = $album->getSongIds();$/;"	v	line:27
+timezone	includes/config.php	/^	$timezone = date_default_timezone_set("Europe\/Kiev");$/;"	v	line:5
+title	includes/classes/Album.php	/^			$this->title = $album['title'];$/;"	v	line:17
+title	includes/classes/Album.php	/^		private $title;$/;"	v	line:5
+title	includes/classes/Song.php	/^			$this->title = $this->mysqliData['title'];$/;"	v	line:20
+title	includes/classes/Song.php	/^		private $title;$/;"	v	line:6
+userLoggedIn	includes/header.php	/^		$userLoggedIn = $_SESSION['userLoggedIn'];$/;"	v	line:8
+userNameCharacters	includes/classes/Constants.php	/^	public static $userNameCharacters = "Your username should be between 5 and 25 characters";$/;"	v	line:11
+userNameTaken	includes/classes/Constants.php	/^	public static $userNameTaken = "This username is already exists";$/;"	v	line:12
+username	includes/handlers/login-handler.php	/^    $username = $_POST['loginUsername'];$/;"	v	line:3
+username	includes/handlers/register-handler.php	/^        $username = sanitizeFormString($_POST['username']);$/;"	v	line:22
+validateFirstName	includes/classes/Account.php	/^        private function validateFirstName($name) {$/;"	f	line:69
+validateLastName	includes/classes/Account.php	/^        private function validateLastName($name) {$/;"	f	line:76
+validateUsername	includes/classes/Account.php	/^        private function validateUsername($username) {$/;"	f	line:55
+validateemail	includes/classes/Account.php	/^        private function validateemail($email, $email2) {$/;"	f	line:83
+validatepassword	includes/classes/Account.php	/^        private function validatepassword($password, $password2) {$/;"	f	line:101
+wasSuccessful	includes/handlers/register-handler.php	/^        $wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);$/;"	v	line:30
